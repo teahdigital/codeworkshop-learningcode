@@ -1,0 +1,84 @@
+@import "compass/css3";
+@import "material.min";
+@import "styles";
+@import "font-awesome/font-awesome";
+main{
+	font-size:0;
+}
+#view{
+	padding: 0 0 0 300px;
+	@media screen and (max-width: 767px) {
+		padding: 0 0 0 0;
+	}
+	width: 100%;
+	@include box-sizing(border-box);
+	
+}
+.section--center{
+		padding: 48px 30px !important;
+	  	// max-width: 100%;
+	}
+.mdl-layout{
+	display: block;
+}
+nav{
+	@include box-sizing(border-box);
+	display: block;
+	width: 280px;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	padding: 33px 0;
+	@media screen and (max-width: 767px) {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 15px 0;
+		text-align: center;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			a{
+				display: block;
+				padding: 15px 30px;
+				text-decoration: none;
+			}
+			span.icon{
+				width: 46px;
+				height: 46px;
+				display: inline-block;
+				background-color: #FF3B7F;
+				border-radius: 50%;
+				margin: 0 15px 0 0;
+				color: #fff;
+				text-align: center;
+				line-height: 46px;
+				font-size: 24px;
+			}
+			.text{
+				font-weight: 400;
+				color: rgba(0,0,0,.66);
+			}
+			@media screen and (max-width: 767px) {
+				display: inline-block;
+				width: 125px;
+				text-align: center;
+				a{
+					padding: 10px;
+					span{
+						display:block;
+					}
+					.icon{
+						margin: 0;
+					}
+					.text{
+						padding: 10px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+}
