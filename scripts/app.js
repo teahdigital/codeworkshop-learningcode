@@ -15,6 +15,10 @@
 			templateUrl : 'views/course.html',
 			controller  : 'learnCtrl'
 		})
+		.when('/learn/:course/:topic', {
+			templateUrl : 'views/topic.html',
+			controller  : 'topicCtrl'
+		})
 
 		.otherwise({
 			redirectTo:'/'

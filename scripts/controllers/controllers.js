@@ -18,9 +18,18 @@
     }])
 
     .controller('learnCtrl', ['$scope', '$routeParams', 'Styles', function($scope, $routeParams, Styles){
-    	console.log('featuresCtrl :: OK');
+    	console.log('learnCtrl :: OK');
 
     	$scope.course = $routeParams.course;
+
+    	Styles.navHeight();
+    }])
+
+    .controller('topicCtrl', ['$scope', '$routeParams', 'Styles', function($scope, $routeParams, Styles){
+    	console.log('topicCtrl :: OK');
+
+    	$scope.course = $routeParams.course;
+    	$scope.topic = $routeParams.topic;
 
     	Styles.navHeight();
     }])
