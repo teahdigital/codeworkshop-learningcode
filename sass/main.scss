@@ -1,0 +1,45 @@
+@import "styles";
+
+.mdl-components__nav{
+	position: absolute;
+	background: #fff;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 24px 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	z-index: 1;
+}
+
+.mdl-components__link {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.mdl-components__link-text {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+	text-decoration: none;
+	position: absolute;
+	color: #999;
+	top: 0;
+	bottom: 0;
+}
+
+.mdl-components__link-image{
+	display: inline-block;
+	margin: 0 10px;
+	background-color: #ddd;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 48px;
+	border-radius: 50%;
+	height: 46px;
+	width: 46px;
+}
+
